@@ -3,7 +3,8 @@
 use App\Http\Livewire\App\{
     Home,
     About,
-    Article
+    Article,
+    Blog
 };
 use Illuminate\Support\Facades\Route;
 
@@ -23,9 +24,7 @@ Route::name('app.')->group(function(){
 
     Route::get('/sobre', About::class)->name('about');
 
-    Route::get('/blog/', function(){
-        return view('welcome');
-    })->name('blog');
+    Route::get('/blog/', Blog::class)->name('blog');
 
     Route::get('/blog/artigos', function(){
         return view('welcome');
