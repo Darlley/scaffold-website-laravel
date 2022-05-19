@@ -1,3 +1,24 @@
 @import 'tailwindcss/base';
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
+
+@import 'app/home.css';
+@import 'app/about.css';
+@import 'app/articles.css';
+@import 'app/article.css';
+@import 'app/blog.css';
+@import 'app/categories.css';
+@import 'app/category.css';
+@import 'app/contact.css';
+
+@import 'admin/home.css';
+@import 'admin/about.css';
+@import 'admin/articles.css';
+@import 'admin/article.css';
+@import 'admin/blog.css';
+@import 'admin/categories.css';
+@import 'admin/category.css';
+@import 'admin/contact.css';
+
+@import 'error.css';
+@import 'search.css';
