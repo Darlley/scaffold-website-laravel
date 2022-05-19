@@ -1,5 +1,10 @@
 <?php
 
+use App\Http\Livewire\App\{
+    Home,
+    About,
+    Article
+};
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -14,13 +19,9 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::name('app.')->group(function(){
-    Route::get('/', function(){
-        return view('welcome');
-    })->name('home');
+    Route::get('/', Home::class)->name('home');
 
-    Route::get('/sobre', function(){
-        return view('welcome');
-    })->name('about');
+    Route::get('/sobre', About::class)->name('about');
 
     Route::get('/blog/', function(){
         return view('welcome');
@@ -30,9 +31,7 @@ Route::name('app.')->group(function(){
         return view('welcome');
     })->name('articles');
 
-    Route::get('/blog/artigo/{slug}', function(){
-        return view('welcome');
-    })->name('article');
+    Route::get('/blog/artigo/{slug}', Article::class)->name('article');
 
     Route::get('/blog/categorias', function(){
         return view('welcome');
