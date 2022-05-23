@@ -27,29 +27,29 @@ Route::name('app.')->group(function(){
     Route::get('/blog/', Blog::class)->name('blog');
 
     Route::get('/blog/artigos', function(){
-        return view('welcome');
+        return "Página de artigos";
     })->name('articles');
 
     Route::get('/blog/artigo/{slug}', Article::class)->name('article');
 
     Route::get('/blog/categorias', function(){
-        return view('welcome');
+        return "Página de categorias";
     })->name('categories');
 
-    Route::get('/blog/categoria/{id}', function(){
-        return view('welcome');
+    Route::get('/blog/categoria/{id}', function($id){
+        return "Página da categoria $id";
     })->name('category');
 
-    Route::get('/pesquisa/{search}', function(){
-        return view('welcome');
+    Route::get('/pesquisa/{search}', function($search){
+        return "Página de resultados de $search";
     })->name('search')->where('search', '.*');
 
     Route::get('/contato', function(){
-        return view('welcome');
+        return "Página de contato";
     })->name('contact');
 
     Route::get('/not-found', function(){
-        return view('welcome');
+        return "Página não encontrada";
     })->name('home');
 });
 
