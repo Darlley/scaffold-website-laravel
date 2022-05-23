@@ -46,4 +46,5 @@
     </section>
 
     <x-partials.cta />
+
 </x-app-layout>

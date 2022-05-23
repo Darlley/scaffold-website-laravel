@@ -19,7 +19,7 @@ Route::name('app.')->group(function(){
     })->name('home');
 
     Route::get('/sobre', function(){
-        return "Página sobre";
+        return view('livewire.app.about');
     })->name('about');
 
     Route::get('/blog/', function(){
@@ -52,7 +52,7 @@ Route::name('app.')->group(function(){
 
     Route::get('/not-found', function(){
         return "Página não encontrada";
-    })->name('home');
+    })->name('not');
 });
 
 
