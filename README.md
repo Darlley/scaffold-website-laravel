@@ -11,6 +11,37 @@
 
 This is an open source project. Aiming at best practices and organizations for projects of institutional websites and landing pages using as technologies: Laravel, Livewire, Jetstream and LivewereCSS (the default layout applied for example was built with Tailwblocks components).
 
+```bash
+app
+├── Http
+│   └── Livewire
+│         ├── App
+│         └── Dashboard   
+├── resources
+│   └── views
+│         ├── components
+│         │     └──partials
+│         │         ├── cta.blade.php
+│         │         ├── footer.blade.php
+│         │         ├── head.blade.php
+│         │         ├── header.blade.php
+│         │         └── menu.blade.php
+│         ├── layouts
+│         │     ├── app.blade.php
+│         │     └── guest.blade.php
+│         └── livewire
+│               ├── admin
+│               └── app
+│                    ├── about.blade.php
+│                    ├── article.blade.php
+│                    ├── articles.blade.php
+│                    ├── blog.blade.php
+│                    ├── contact.blade.php
+│                    └── home.blade.php
+└── README.md
+
+```
+
 ![scaffold](https://user-images.githubusercontent.com/37590954/169861352-acc4c79d-47e8-4c8e-8dc7-c2cc78b64e14.png)
 
 ## About technologies 
