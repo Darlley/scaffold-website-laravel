@@ -5,19 +5,19 @@
 
         <!-- STYLES -->
         <link rel="stylesheet" href="{{ mix('css/app.css') }}">
-        @livewireStyles
+        <livewire:styles />
         
         <!-- SCRIPTS -->
         <script src="{{ mix('js/app.js') }}" defer></script>
     </head>
     
     <body class="font-sans antialiased">
-        <x-jet-banner />
-
+        
         <div class="min-h-screen bg-gray-100">
             @unless (Auth::check())
-                <x-partials.menu /> <!-- MENU FRONTEND -->
+            <x-partials.header />
             @else
+                <x-jet-banner />
                 @livewire('navigation-menu')
                 <!-- Page Heading -->
                 @if (isset($header))
@@ -29,7 +29,6 @@
                 @endif
             @endunless
 
-            <x-partials.header />
             
             <!-- Page Content -->
             <main>
@@ -41,6 +40,6 @@
 
         @stack('modals')
 
-        @livewireScripts
+        <livewire:scripts />
     </body>
 </html>

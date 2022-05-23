@@ -2,7 +2,7 @@
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
 
-@import 'app/home.css';
+/* @import 'app/home.css';
 @import 'app/about.css';
 @import 'app/articles.css';
 @import 'app/article.css';
@@ -21,4 +21,4 @@
 @import 'admin/contact.css';
 
 @import 'error.css';
-@import 'search.css';
+@import 'search.css'; */
