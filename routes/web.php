@@ -23,7 +23,7 @@ Route::name('app.')->group(function(){
     })->name('about');
 
     Route::get('/blog/', function(){
-        return "Página blog";
+        return view('livewire.app.blog');
     })->name('blog');
 
     Route::get('/blog/artigos', function(){
@@ -47,7 +47,7 @@ Route::name('app.')->group(function(){
     })->name('search')->where('search', '.*');
 
     Route::get('/contato', function(){
-        return "Página de contato";
+        return view('livewire.app.contact');
     })->name('contact');
 
     Route::get('/not-found', function(){
